@@ -9,7 +9,7 @@ cache:
   - '%LOCALAPPDATA%\NuGet\v3-cache -> appveyor.yml'
 before_build:
   - ps: dotnet --info # Useful when version mismatch between CI and local
-  - ps: nuget restore -verbosity quiet # Only nuget.exe knows .NET Core projects
+  - ps: nuget restore GD.DifficultyCalculator.sln -verbosity quiet # Only nuget.exe knows .NET Core projects
 build:
   project: GD.DifficultyCalculator.sln
   parallel: true
