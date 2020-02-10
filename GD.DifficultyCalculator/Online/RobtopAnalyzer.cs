@@ -87,7 +87,14 @@ namespace GD.Calculator.Online
                     i++;
                     var val = seperated[i];
 
-                    dictionary.Add(key, val);
+                    try
+                    {
+                        dictionary.Add(key, val);
+                    }
+                    catch
+                    {
+                        //...
+                    }
 
                     i++;
                 }
