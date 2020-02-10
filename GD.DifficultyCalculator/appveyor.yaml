@@ -3,7 +3,7 @@ version: '{branch}-{build}'
 image: Visual Studio 2019
 dotnet_csproj:
   patch: true
-  file: 'GD.DifficultyCalculator\GD.Calculator.csproj' # Use wildcard when it's able to exclude Xamarin projects
+  file: 'GD.DifficultyCalculator/GD.Calculator.csproj' # Use wildcard when it's able to exclude Xamarin projects
   version: '0.0.{build}'
 cache:
   - '%LOCALAPPDATA%\NuGet\v3-cache -> appveyor.yml'
@@ -11,7 +11,7 @@ before_build:
   - ps: dotnet --info # Useful when version mismatch between CI and local
   - ps: nuget restore -verbosity quiet # Only nuget.exe knows .NET Core projects
 build:
-  project: GD.DifficultyCalculator.sln
+  project: 'GD.DifficultyCalculator/GD.DifficultyCalculator.sln'
   parallel: true
   verbosity: minimal
   publish_nuget: true
