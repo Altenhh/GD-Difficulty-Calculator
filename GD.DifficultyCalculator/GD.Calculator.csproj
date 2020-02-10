@@ -5,4 +5,9 @@
         <TargetFramework>netcoreapp3.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="GDAPI" Version="1.1.8" />
+      <PackageReference Include="ppy.osu.Framework" Version="2020.207.0" />
+    </ItemGroup>
+
 </Project>
