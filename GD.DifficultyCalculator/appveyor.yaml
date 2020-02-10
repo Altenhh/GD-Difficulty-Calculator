@@ -3,7 +3,7 @@ version: '{branch}-{build}'
 image: Visual Studio 2019
 dotnet_csproj:
   patch: true
-  file: 'GD.Calculator.csproj' # Use wildcard when it's able to exclude Xamarin projects
+  file: 'GD.DifficultyCalculator\GD.Calculator.csproj' # Use wildcard when it's able to exclude Xamarin projects
   version: '0.0.{build}'
 cache:
   - '%LOCALAPPDATA%\NuGet\v3-cache -> appveyor.yml'
