@@ -16,6 +16,6 @@ build:
   verbosity: minimal
   publish_nuget: true
 after_build:
-  - ps: dotnet tool restore GD.DifficultyCalculator.sln
-  - ps: dotnet format --dry-run --check
+  - ps: dotnet tool restore
+  - ps: dotnet format --workspace GD.DifficultyCalculator.sln --dry-run --check
   - ps: .\InspectCode.ps1
