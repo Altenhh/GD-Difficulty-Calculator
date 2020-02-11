@@ -11,10 +11,14 @@
 
     <ItemGroup>
       <Compile Remove="DLLs\**" />
+      <Compile Remove="CodeAnalysis\**" />
+      <Compile Remove="build\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="DLLs\**" />
+      <EmbeddedResource Remove="CodeAnalysis\**" />
+      <EmbeddedResource Remove="build\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -30,6 +34,8 @@
       <None Remove="InspectCode.ps1" />
       <None Remove="LICENSE.md" />
       <None Remove="README.md" />
+      <None Remove="CodeAnalysis\**" />
+      <None Remove="build\**" />
     </ItemGroup>
 
     <ItemGroup>
