@@ -6,8 +6,36 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="GDAPI" Version="1.1.8" />
       <PackageReference Include="ppy.osu.Framework" Version="2020.207.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="DLLs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="DLLs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="DLLs\**" />
+      <None Remove=".gitignore" />
+      <None Remove="app.manifest" />
+      <None Remove="appveyor.yaml" />
+      <None Remove="cake.config" />
+      <None Remove="Directory.Build.props" />
+      <None Remove="GD.DifficultyCalculator.sln.DotSettings" />
+      <None Remove="GemFile" />
+      <None Remove="GemFile.lock" />
+      <None Remove="InspectCode.ps1" />
+      <None Remove="LICENSE.md" />
+      <None Remove="README.md" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="GDAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>DLLs\GDAPI.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
