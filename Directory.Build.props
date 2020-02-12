@@ -1,7 +1,7 @@
 ﻿<Project>
     <PropertyGroup Label="C#">
         <LangVersion>8.0</LangVersion>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     </PropertyGroup>
     <PropertyGroup>
         <ApplicationManifest>$(MSBuildThisFileDirectory)app.manifest</ApplicationManifest>
